@@ -31,18 +31,16 @@ header span{
 
 /*main*/
 main{
-    
+  height: 100vh;
     
 }
 /*aside*/
 aside{ 
     height: calc(100vh - 100px);
-    
     width: 200px;
     background-color: #000;
     color:#5f5f5f;
     flex-direction: row;
-    
     flex-wrap: wrap;
     font-size: 16px; 
 }
@@ -53,8 +51,7 @@ aside .ul{
 /*logo*/
 aside .logo {
     width: 100%;
-    padding: 20px;
-    
+    padding: 20px;   
 }
 /*menù dell'aside*/
 
@@ -64,17 +61,27 @@ main .menu i{
     vertical-align: sub;
 }
 
+
 /*playlist dell'aside*/
+.playlist{
+    padding: 20px;
+}
 /*la devi dare al contenuto per averlo nel modo giusto*/
 .list{
-    height: 150px;
+    height: 126px;
     overflow-y: scroll;
+    
+}
+
+.list li{
+  list-style: none;  
 }
 
 /*user dell'aside*/
 main .user{
     align-self: flex-end;
-    z-index: 2;
+    width: 100%;
+    padding: 20px;
 }
 .user .bar{
     width: 90%;

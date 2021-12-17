@@ -25,7 +25,7 @@ main{
 }
 
 aside{
-    height: calc(100 - 140px);
+    height: calc(100% - 140px);
     width: 300px;
     background-color: #000;
 }

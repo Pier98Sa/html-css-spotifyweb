@@ -43,6 +43,8 @@ aside{
     background-color: #000;
     color:#5f5f5f;
     flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     font-size: 16px; 
 }
 
@@ -67,7 +69,9 @@ main .menu i{
 
 
 /*user dell'aside*/
-
+main .user{
+    align-self: flex-end;
+}
 .user .bar{
     width: 90%;
     border-bottom: solid 1px #525252;

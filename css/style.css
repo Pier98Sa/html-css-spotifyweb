@@ -5,15 +5,46 @@
     box-sizing: border-box;
 }
 
+.flex{
+    display: flex;
+}
 /*header*/
-
-
+header{
+    background-color: #080b12;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
 
 /*main*/
+main{
+    width: 100vw;
+    height: 100vh;
+}
 
+aside{
+    height: calc(100 - 140px);
+    width: 300px;
+    background-color: #000;
+}
+
+section{
+    height: calc(100% - 140px);
+    width: calc(100% - 300px);
+    background-color: #141922;
+}
 
 /*Footer*/
-
+footer{
+    background-color: #282828;
+    height: 140px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
 
 
 

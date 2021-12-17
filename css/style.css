@@ -36,24 +36,58 @@ main{
     
 }
 /*aside*/
-aside{
+aside{ 
     height: calc(100% - 100px);
+    min-height: 600px;
     width: 200px;
     background-color: #000;
     color:#5f5f5f;
     flex-direction: column;
     font-size: 16px;
+    justify-content: flex-start;
+}
+
+aside .ul{
+    list-style: none;
 }
 /*logo*/
 aside .logo {
     width: 100%;
     padding: 20px;
+    
 }
 /*menù dell'aside*/
 
 main .menu i{
     font-size: 28px;
-    padding: 5px 10px;
+    padding: 5px 10px 5px 20px;
+    vertical-align: sub;
+}
+
+/*playlist dell'aside*/
+
+main .playlist{
+    overflow-y: auto;
+}
+
+main .playlist ul {
+    height:150px;
+    overflow-y: auto;
+}
+
+/*user dell'aside*/
+.user{
+    
+}
+.user .bar{
+    width: 90%;
+    border-bottom: solid 1px #525252;
+}
+
+.user img{
+    width: 15px;
+    background-color: #808080;
+    border-radius: 50%;
 }
 /*section*/
 section{

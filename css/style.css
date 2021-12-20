@@ -244,6 +244,33 @@ footer{
     bottom: 0;
     right: 0;  
     z-index: 3;
+    color: #fff;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+/*FOOTER LEFT*/
+.footer-left{
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    color: #75787d;
+}
+.footer-left img{
+    width: 50px;
+}
+
+.info-song {
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.button-save i{
+    margin: 0px 5px;
+}
+.info-song .bold{
+    font-weight: bolder;
+    color: #fff;
 }
 
 

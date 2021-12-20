@@ -16,12 +16,20 @@ body {
 }
 
 /*MAIN*/
+main {
+    height: calc(100% - 100px);
+}
 
+main::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 /*ASIDE COMMON*/
 aside{ 
-    height: 90vh;
-    min-height: 500px;
-    width: 250px;
+    height: 100%;
+    float: left;
+    width: 200px;
     background-color: #000;
     color:#5f5f5f;
     flex-direction: row;
@@ -44,6 +52,7 @@ aside li{
 .sidebar-top {
     width: 100%;
     height: calc(100% - 100px);
+    flex-direction: column;
 }
 
 /*logo*/
@@ -57,14 +66,13 @@ aside .logo .small{
 }
 /*MENU */
 
-main .menu img{
-    width: 23%;
-    padding: 5px 5px 5px 20px;
-    vertical-align: middle;  
+.menu-item .img-menu{
+    width: 30px; 
+    margin-left: 20px;
 }
 
-main .menu span{
-    vertical-align: middle;
+.menu-item{
+    justify-content: flex-start;
 }
 
 /*PLAYLIST dell'aside*/
@@ -136,10 +144,11 @@ main .menu span{
 /*MAIN CONTAINER*/
 
 .main-container{
-    height: 90vh;
-    width: calc(100% - 250px);
+    height: 100%;
+    width: calc(100% - 200px);
     background-color: #141922;
     overflow-y: scroll;
+    float: left;
 }
 
 /*CTA*/
@@ -167,6 +176,9 @@ main .menu span{
 .content{
     width: 100%;
     margin: 20px;
+    margin-top: 90px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .content h2{
     color: #fff;
@@ -177,12 +189,6 @@ main .menu span{
     color: #75787d;
     margin: 10px 0px;
 }
-.main-container .content{
-    margin-top: 90px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 /*CENTRAL MENU*/
 
 .content .main-menu{
@@ -247,7 +253,8 @@ main .menu span{
 /*FOOTER*/
 footer{
     background-color: #282828;
-    height: 10vh;
+    position: relative;
+    height: 100px;
     width: 100%;
     min-width: 575px;
     color: #fff;
@@ -350,30 +357,49 @@ footer{
 
 /* X-small*/
 @media all and (max-width:575px ) {
-
+    /*aside*/   
     aside{  
         width: 50px;
     }
-
+    /*sidebar top*/
+    .sidebar-top{
+        align-items: center;
+    }
+    /*logo*/
     aside .logo .big{
         display: none;
     }
 
     aside .logo .small{
         display: block;
-        width: 100%;
+        
     }
-    main .menu img {
-        width: 65%;
-        padding: 5px;
+    aside .logo {
+        width: 70%;
+        padding: 0px;   
     }
+    /*menu item*/
+    .menu-item{
+    justify-content: center;
+    margin-top: 15px;
+    }
+    .mark{
+        border-left: none;
+    }
+    .menu-item .img-menu {
+        width: 25px;
+        margin-left:0px
+    }
+   
     aside .menu span{
         display: none;
     }
+    /*playlist*/
     aside .playlist{
         display: none;
     }
-
+    
+    /*SIDEBAR BOTTOM*/
     .sidebar-bottom span {
         display: none;
     }
@@ -381,6 +407,21 @@ footer{
     .sidebar-bottom .bar{
         display: none;
     }
+    .sidebar-bottom{ 
+        margin-left: 0px; 
+    }
+
+    .sidebar-bottom .download img{
+        margin-right: 0px;
+        margin-left: 1px;
+        margin-bottom: 10px;
+    }
+
+    /*profile*/
+    .sidebar-bottom .profile img{
+        margin-right: 0px;
+    }
+
     .main-container{
         width: calc(100% - 50px);
     }

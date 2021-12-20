@@ -236,7 +236,13 @@ main .menu span{
     font-size: 15px;
 }
 
-/*PERSONAL*/
+/*POPOLAR*/
+.popolar .image{
+    border-radius: 50%;
+}
+.popolar img{
+    border-radius: 50%;
+}
 
 /*FOOTER*/
 footer{

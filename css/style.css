@@ -19,7 +19,7 @@ body {
 
 /*ASIDE COMMON*/
 aside{ 
-    height: calc(100vh - 100px);
+    height: 90vh;
     min-height: 500px;
     width: 250px;
     background-color: #000;
@@ -91,7 +91,6 @@ main .menu span{
 .list{
     height: 220px;
     overflow-y: auto; 
-
 }
 
 .list li{
@@ -138,7 +137,7 @@ main .menu span{
 /*MAIN CONTAINER*/
 
 .main-container{
-    height: calc(100vh - 100px);
+    height: 90vh;
     width: calc(100% - 250px);
     background-color: #141922;
     overflow-y: scroll;
@@ -243,13 +242,9 @@ main .menu span{
 /*FOOTER*/
 footer{
     background-color: #282828;
-    height: 100px;
+    height: 10vh;
     width: 100%;
     min-width: 575px;
-    position: fixed;
-    bottom: 0;
-    right: 0;  
-    z-index: 3;
     color: #fff;
     font-size: 14px;
     justify-content: space-between;

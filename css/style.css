@@ -263,6 +263,7 @@ aside .logo .small{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    text-decoration: none;
 }
 
 .cover img{

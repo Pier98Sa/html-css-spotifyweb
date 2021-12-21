@@ -309,8 +309,9 @@ footer{
 .footer-left{
     justify-content: space-around;
     align-items: center;
-    flex-basis: 15%;
+    flex-basis: 20%;
     color: #75787d;
+    flex-shrink: 0;
 }
 .footer-left img{
     width: 50px;
@@ -336,7 +337,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 60%;
+    flex-basis: 50%;
+    flex-shrink: 1;
 }
 
 /*button-box*/
@@ -377,14 +379,17 @@ footer{
 }
 /*FOOTER RIGHT*/
 .footer-right{
-    flex-basis: 15%;
-    justify-content: space-between;
+    flex-basis: 20%;
+    justify-content: space-around;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 5px;
+    flex-shrink: 0;
 }
-
+.footer-right i{
+    padding: 0px 5px;
+}
 .volume-bar-grey{
-    width: 50%;
+    width: 60%;
     height: 4px;
     background-color: #5a5a5a;
     border-radius: 4px;
@@ -448,8 +453,9 @@ footer{
     justify-content: center;
     margin-top: 15px;
     }
-    .mark{
+    .menu-item.mark{
         border-left: none;
+    }
     }
     .menu-item .img-menu {
         width: 25px;

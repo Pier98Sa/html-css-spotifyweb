@@ -307,14 +307,19 @@ footer{
 
 /*FOOTER LEFT*/
 .footer-left{
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-basis: 20%;
+    flex-basis: 15%;
     color: #75787d;
     flex-shrink: 0;
 }
+
+.footer-left .In-play{
+    align-items: center;
+}
 .footer-left img{
     width: 50px;
+    margin: 0px 10px;
 }
 
 .info-song {
@@ -337,7 +342,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 50%;
+    flex-basis: 60%;
     flex-shrink: 1;
 }
 
@@ -379,7 +384,7 @@ footer{
 }
 /*FOOTER RIGHT*/
 .footer-right{
-    flex-basis: 20%;
+    flex-basis: 15%;
     justify-content: space-around;
     align-items: center;
     margin-right: 5px;

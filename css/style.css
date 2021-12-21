@@ -164,13 +164,14 @@ aside .logo .small{
     align-items: center;
 }
 
-.cta span{
+.cta .btn-cta{
     border: solid 1px #f1f1f2;
     color: #f1f1f2;
     padding: 10px 30px;
     border-radius: 22px;
     font-size: 12px;
     margin-right: 10px;
+    text-decoration: none;
 }
 
 /*CONTENT*/
@@ -382,6 +383,27 @@ footer{
     .sidebar-top{
         align-items: center;
     }
+    aside .list{
+        display: none;
+    }
+     /*SIDEBAR BOTTOM*/
+    .sidebar-bottom span {
+        display: none;
+    }
+
+    .sidebar-bottom .bar{
+        display: none;
+    }
+    .sidebar-bottom{ 
+        margin-left: 0px; 
+    }
+
+    .sidebar-bottom .download img{
+        margin-right: 0px;
+        margin-left: 1px;
+        margin-bottom: 10px;
+    }
+
     /*logo*/
     aside .logo .big{
         display: none;
@@ -416,24 +438,7 @@ footer{
         display: none;
     }
     
-    /*SIDEBAR BOTTOM*/
-    .sidebar-bottom span {
-        display: none;
-    }
-
-    .sidebar-bottom .bar{
-        display: none;
-    }
-    .sidebar-bottom{ 
-        margin-left: 0px; 
-    }
-
-    .sidebar-bottom .download img{
-        margin-right: 0px;
-        margin-left: 1px;
-        margin-bottom: 10px;
-    }
-
+   
     /*profile*/
     .sidebar-bottom .profile img{
         margin-right: 0px;

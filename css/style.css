@@ -177,6 +177,9 @@ aside .logo .small{
     text-decoration: none;
 }
 
+.btn-cta:hover{
+    transform: scale(1.1);
+}
 /*CONTENT*/
 .content{
     width: 100%;

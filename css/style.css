@@ -66,6 +66,10 @@ aside .logo .small{
 .menu-item .img-menu{
     width: 30px; 
     margin-left: 20px;
+    
+}
+.menu a{
+    opacity: 0.8;
 }
 .menu-item .text-menu{
     margin-left: 5px;
@@ -78,7 +82,13 @@ aside .logo .small{
     border-left: solid 3px transparent;
 }
 .menu-item.mark{
-    border-left: solid 3px #adff2f;
+    border-left: solid 3px #adff2f;  
+}
+
+/*effetto di hover del menu*/
+.sidebar-top .menu ul li:hover a{
+    color: #fff;
+    opacity: 1;
 }
 /*PLAYLIST dell'aside*/
 .playlist{
@@ -92,6 +102,7 @@ aside .logo .small{
     text-decoration: none;
     color: #5f5f5f;
     margin-top: 10px;
+    opacity: 0.6;
 }
 .playlist .make-new i{
     font-size: 28px;
@@ -106,7 +117,6 @@ aside .logo .small{
     margin-left: 10px;
 }
 
-/*la devi dare al contenuto per averlo nel modo giusto*/
 .list{
     overflow-y: auto; 
     margin-left: 15px;
@@ -119,6 +129,17 @@ aside .logo .small{
 .list a{
     text-decoration: none;
     color: #5f5f5f;
+}
+
+/*effetto di hover della playlist*/
+.make-new:hover{
+    color: #fff;
+    opacity: 1;
+}
+
+/*effetto di hover della list*/
+.sidebar-top .list a:hover{
+    color: #fff;
 }
 /*SIDEBAR BOTTOM*/
 
@@ -161,11 +182,15 @@ aside .logo .small{
     font-size: 14px;
     font-weight: bold;
 }
-
+/*effetto di hover*/
+.sidebar-bottom .download a:hover{
+    color: #fff;
+}
 /*MAIN CONTAINER*/
 
 .main-container{
     height: 100%;
+    min-height: 400px;
     width: calc(100% - 200px);
     background-color: #141922;
     overflow-y: scroll;
@@ -299,7 +324,6 @@ footer{
     left:0;
     height: 100px;
     width: 100%;
-    min-width: 575px;
     color: #fff;
     font-size: 14px;
     justify-content: space-between;
@@ -309,7 +333,7 @@ footer{
 .footer-left{
     justify-content: space-between;
     align-items: center;
-    flex-basis: 15%;
+    flex-basis: 20%;
     color: #75787d;
     flex-shrink: 0;
 }
@@ -318,7 +342,7 @@ footer{
     align-items: center;
 }
 .footer-left img{
-    width: 50px;
+    width: 40px;
     margin: 0px 10px;
 }
 
@@ -327,14 +351,19 @@ footer{
     font-size: 12px;
 }
 
-.button-save i{
-    margin: 0px 5px;
-    color: #75787d;
-}
 .info-song .bold{
     font-weight: bolder;
     color: #fff;
 }
+
+.button-save{
+
+}
+.button-save i{
+    margin: 0px 5px;
+    color: #75787d;
+}
+
 
 /*FOOTER CENTER*/
 
@@ -384,7 +413,7 @@ footer{
 }
 /*FOOTER RIGHT*/
 .footer-right{
-    flex-basis: 15%;
+    flex-basis: 20%;
     justify-content: space-around;
     align-items: center;
     margin-right: 5px;
@@ -499,6 +528,16 @@ footer{
         padding: 20px 20px 20px 0px;
         width: calc( 100% / 2 );   
     }
+
+    /*Footer*/
+    /*footer left*/
+    .footer-left .button-save {
+        flex-direction: column;
+    }
+    /*footer right*/
+    .footer-right .fa-list, .footer-right .fa-tv{
+        display: none;
+    }
 }
 
 /*Small*/
@@ -507,6 +546,13 @@ footer{
     .cover{
         padding: 20px 20px 20px 0px;
         width: calc( 100% / 2 );   
+    }
+
+    /*footer*/
+
+    /*footer left*/
+    .footer-left .button-save {
+        flex-direction: column;
     }
 }
 
@@ -517,4 +563,6 @@ footer{
         padding: 20px 20px 20px 0px;
         width: calc( 100% / 4 );   
     }
+
+   
 }

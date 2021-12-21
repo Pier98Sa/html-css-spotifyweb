@@ -417,7 +417,49 @@ footer{
     aside .list{
         display: none;
     }
-     /*SIDEBAR BOTTOM*/
+
+    /*logo*/
+    aside .logo .big{
+        display: none;
+    }
+
+    aside .logo .small{
+        display: block;
+        
+    }
+
+    aside .logo {
+        width: 70%;
+        padding: 0px;
+        margin-top: 5px;   
+    }
+
+    /*menu item*/
+    .menu-item{
+        justify-content: center;
+        margin-top: 15px;
+        border-left: none;
+    }
+
+    .menu-item.mark{
+        border-left: none;
+    }
+
+    .menu-item .img-menu {
+        width: 25px;
+        margin-left: 5px
+    }
+   
+    aside .menu span{
+        display: none;
+    }
+
+    /*playlist*/
+    aside .playlist{
+        display: none;
+    }
+    
+    /*SIDEBAR BOTTOM*/
     .sidebar-bottom span {
         display: none;
     }
@@ -434,43 +476,6 @@ footer{
         margin-left: 1px;
         margin-bottom: 10px;
     }
-
-    /*logo*/
-    aside .logo .big{
-        display: none;
-    }
-
-    aside .logo .small{
-        display: block;
-        
-    }
-    aside .logo {
-        width: 70%;
-        padding: 0px;   
-    }
-    /*menu item*/
-    .menu-item{
-    justify-content: center;
-    margin-top: 15px;
-    }
-    .menu-item.mark{
-        border-left: none;
-    }
-    }
-    .menu-item .img-menu {
-        width: 25px;
-        margin-left:0px
-    }
-   
-    aside .menu span{
-        display: none;
-    }
-    /*playlist*/
-    aside .playlist{
-        display: none;
-    }
-    
-   
     /*profile*/
     .sidebar-bottom .profile img{
         margin-right: 0px;

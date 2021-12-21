@@ -275,6 +275,10 @@ aside .logo .small{
     position: relative;
 }
 
+/*effetto di hover*/
+.central-menu .main-menu a:hover{
+    color: #fff;
+}
 /*RECENTLY*/
 
 /*Album*/
@@ -291,6 +295,7 @@ aside .logo .small{
     flex-wrap: wrap;
     align-items: center;
     text-decoration: none;
+    
 }
 
 .cover img{
@@ -355,15 +360,25 @@ footer{
     font-weight: bolder;
     color: #fff;
 }
-
-.button-save{
-
+.info-song a{
+    text-decoration: none;
+    color: #75787d;
 }
 .button-save i{
     margin: 0px 5px;
     color: #75787d;
 }
 
+/*effetto di hover del footer left*/
+
+.info-song a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.button-save i:hover{
+    color: #fff;
+}
 
 /*FOOTER CENTER*/
 
@@ -411,6 +426,20 @@ footer{
     background-color: #c1c1c1;
     border-radius: 4px;
 }
+
+/*effetto di hover del footer center*/
+.button-box .fa-play-circle:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button-box .fa-random:hover{
+    cursor: pointer;
+}
+
+.playback-bar .grey-bar:hover .white-bar{
+    background-color: #adff2f;
+}
 /*FOOTER RIGHT*/
 .footer-right{
     flex-basis: 20%;
@@ -434,7 +463,11 @@ footer{
     background-color: #c1c1c1;
     border-radius: 4px;
 }
+/*effetto di hover del footer right*/
 
+.footer-right .volume-bar-grey:hover .volume-bar-white{
+    background-color: #adff2f;
+}
 
 /*Media Query*/
 

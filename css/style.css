@@ -221,10 +221,12 @@ aside .logo .small{
     align-items: center;
     flex-wrap: wrap;
     color: #7a7c81;
+    
 }
 
 .content .central-menu li{
     list-style: none;
+    margin: 20px 0px;
 }
 
 .content .central-menu li a{
@@ -240,7 +242,7 @@ aside .logo .small{
     width: 40px;
     background-color: #adff2f;
     position: absolute;
-    bottom: 4px;
+    bottom: 8px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -258,8 +260,8 @@ aside .logo .small{
 
 /*Cover*/
 .cover{
-    margin: 20px 20px 20px 0px;
-    width: 200px;
+    padding: 20px 20px 20px 0px;
+    width: calc( 100% / 6 );
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -267,8 +269,8 @@ aside .logo .small{
 }
 
 .cover img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    object-fit: cover;
     
 }
 .cover h3{
@@ -476,16 +478,27 @@ footer{
         width: calc(100% - 50px); 
     }
 
-    
-    
+    /*main container*/
+    .cover{
+        padding: 20px 20px 20px 0px;
+        width: calc( 100% / 2 );   
+    }
 }
 
 /*Small*/
 @media all and (min-width:576px ) and (max-width:767px) {
-    
+    /*main container*/
+    .cover{
+        padding: 20px 20px 20px 0px;
+        width: calc( 100% / 2 );   
+    }
 }
 
 /*Medium*/
 @media all and (min-width:768px ) and (max-width:991px) {
-    
+   /*main container*/
+   .cover{
+        padding: 20px 20px 20px 0px;
+        width: calc( 100% / 4 );   
+    }
 }

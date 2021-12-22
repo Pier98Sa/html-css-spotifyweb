@@ -441,6 +441,7 @@ footer{
     align-items: center; 
     margin-top: 10px;
     width: 70%;
+    justify-content: space-between;
 }
 
 .playback-bar span{
